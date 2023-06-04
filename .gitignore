@@ -1,0 +1,10 @@
+build/
+.gradle/
+.idea/
+out/
+
+Grid/
+chart/
+LicenseKey/
+
+context.xml

@@ -1,0 +1,61 @@
+h1.navi-area{
+    font-size: 30px;
+    margin-top: 50px;
+    font-weight: bold;
+    width: 300px;
+}
+
+.sample::before{
+    font-family: 'Material Icons';
+    font-size: 7rem;
+    color: black;
+    content: '\e4fc';
+}
+.sample2::before{
+    font-size: 7rem;
+    color: black;
+}
+
+
+.sample3::before{
+
+    font-size: 50px;
+    line-height: 60px;
+    width: 60px;
+    height: 60px;
+    display: block;
+
+    font-family: 'Material Icons';
+    /* font-size: 7rem; */
+    background-color: #FF7000;
+    color: white;
+    text-align: center;
+    content: '\e4fc';
+}
+.sample4::before{
+    font-size: 60px;
+    line-height: 100px;
+    width: 100px;
+    height: 100px;
+    /*font-size: 7rem;*/
+    background-color: #FFBF00;
+    color: white;
+    text-align: center;
+}
+
+
+
+.sample5::before{
+    font-size: 100px;
+    line-height: 120px;
+    width: 120px;
+    height: 120px;
+    display: block;
+
+    font-family: 'Material Icons';
+    /* font-size: 7rem; */
+    background-color: #619b8a;
+    color: white;
+    text-align: center;
+    content: '\e8ca';
+}

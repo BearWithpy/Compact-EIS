@@ -1,0 +1,10 @@
+.sample2::before{
+    font-size: 70px;
+    line-height: 80px;
+    width: 80px;
+    height: 80px;
+    /*font-size: 7rem;*/
+    background-color: #FFBF00;
+    color: white;
+    text-align: center;
+}

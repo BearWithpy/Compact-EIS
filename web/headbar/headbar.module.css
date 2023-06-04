@@ -1,0 +1,96 @@
+.header-menu {
+    overflow: hidden;
+    width: 100%;
+    background-color: #2968b8;
+    color: #ffffff;
+    transition: all 0.5s ease;
+    /*border-radius: 20px;*/
+    padding: 10px;
+    box-sizing: border-box;
+    /*margin-left: 5px;*/
+    /*margin-bottom: 5px;*/
+    /*margin-top: 5px;*/
+    border-bottom: 1px solid black;
+}
+
+.header-menu ul {
+    display: flex;
+    float: right;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.header-menu a, .header-menu > label {
+    display: inline-block;
+    height: 37px;
+    padding: 8px;
+    cursor: pointer;
+    color: #FFFFFF;
+    text-decoration: none;
+}
+
+.header-menu a:hover {
+    color: #023e8a;
+}
+
+.header-menu > ul li:hover, .header-menu > label:hover {
+    background-color: #fff;
+    color: #023e8a;
+    border-radius: 10px;
+}
+
+.header-menu div {
+    position: absolute;
+    left: 60px;
+    line-height: 1.5;
+    font-size: 15px;
+    font-family: 'Noto Sans KR';
+    padding: 0 0 0 20px;
+}
+
+
+
+#expand-menu {
+    display: none;
+}
+
+/*#expand-menu:checked ~ ul {*/
+/*    display: block;*/
+/*    height: auto;*/
+/*}*/
+
+
+.header-menu ::before {
+    font-family: 'Material Icons';
+    font-size: 25px;
+    float: left;
+    clear: left;
+
+
+}
+
+.header-menu label::before {
+    content: '\e5d2';
+}
+
+.header-menu li:nth-child(1) a::before {
+    content: '\e8b6';
+    display: none;
+}
+
+.header-menu li:nth-child(2) a::before {
+    content: '\e853';
+    display: none;
+}
+
+.header-menu li:nth-child(3) a::before {
+    content: '\e9ba';
+}
+
+
+/*@media screen and (max-width:1023px) {*/
+/*    .menu {*/
+/*        width: 60px;*/
+/*    }*/
+/*}*/

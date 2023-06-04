@@ -1,0 +1,95 @@
+.menu {
+    display: block;
+    overflow: hidden;
+    width: 100%;
+    height: 100%;
+    background-color: black;
+    color: white;
+    transition: all 0.5s ease;
+    /*border-radius: 20px;*/
+    /*padding: 10px;*/
+    box-sizing: border-box;
+    /*margin-left: 5px;*/
+    /*margin-bottom: 5px;*/
+    /*margin-top: 5px;*/
+}
+.menu ul {
+    list-style: none;
+margin: 0;
+    padding: 0;
+}
+
+.menu li {
+    /*margin-top: 20px;*/
+    /*margin-bottom: 20px;*/
+    padding: 12px 0px 12px 10px;
+}
+.menu a, .menu > label {
+    display: block;
+    height: 39px;
+    padding: 8px;
+    cursor: pointer;
+    color: white;
+    text-decoration: none;
+}
+
+.menu a:hover {
+    color: black;
+
+
+}
+.menu ul li:hover, .menu > label:hover {
+    background-color: #e9eef3;
+    color: black;
+    /*border-radius:10px;*/
+
+
+}
+.menu div {
+    position: absolute;
+    left: 60px;
+    line-height: 1.5;
+    font-size: 18px;
+    font-family: 'Noto Sans KR';
+    padding: 0 0 0 20px;
+}
+
+/*#expand-menu {*/
+/*    display: none;*/
+/*}*/
+
+
+/*.menu #expand-menu:not(:checked) ~ ul {*/
+/*    display: none;*/
+/*    height: 0;*/
+/*    transition: all 0.5s ease;*/
+/*}*/
+
+.menu ::before {
+    font-family: 'Material Icons';
+    font-size: 30px;
+    float: left;
+    clear: left;
+
+}
+.menu label::before{ content: '\e5d2'; }
+.menu li:nth-child(1) a::before{ content: '\e871'; }
+.menu li:nth-child(2) a::before{ content: '\ef63'; }
+.menu li:nth-child(3) a::before{ content: '\f02e'; }
+.menu li:nth-child(4) a::before{ content: '\e8cc'; }
+.menu li:nth-child(5) a::before{ content: '\e8b8'; }
+
+
+@media screen and (max-width:1023px) {
+    .menu {
+        width: 60px;
+    }
+}
+
+@media screen and (max-width:560px) {
+    .menu #expand-menu:not(:checked) ~ ul {
+        display: none;
+        height: 0;
+        transition: all 0.5s ease;
+    }
+}
